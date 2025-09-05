@@ -11,7 +11,7 @@ def connect():
 def create_tables():
     connection = connect()
     cursor = connection.cursor()
-    
+
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS Users (
         user_id INT AUTO_INCREMENT PRIMARY KEY,
